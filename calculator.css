@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+main {
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+}
+
+.display-text {
+  font-size: min(3em, 50px);
+  border: 1px solid black;
+  display: flex;
+  width: max(90vw);
+  height: max(100px);
+  justify-content: start;
+  padding: 1rem;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dail-pad {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  margin-top: 10px;
+  width: min(90vw);
+  height: min(70vh);
+}
+
+div.dail-pad > button {
+  background-color: rgb(35, 35, 35);
+  color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: min(3em, 50px);
+  cursor: pointer;
+}
+
+
+.number.divide,
+.number.plus,
+.number.minus,
+.number.times,
+#clear,
+#del,
+.percent.operator {
+  background-color: rgb(245, 100, 40);
+}
+
+.equal#eval {
+  background-color: rgb(2, 80, 40);
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+/* Responsive Layouts */
+@media (max-width: 480px) {
+  .dail-pad {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    margin-top: 10px;
+    width: min(90vw, 500px);
+    height: min(70vh);
+  }
+
+  div.dail-pad > button {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 375px) {
+  .dail-pad {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    margin-top: 10px;
+    width: min(90vw, 500px);
+    height: min(70vh);
+  }
+}
+
+@media (max-width: 414px) {
+  .dail-pad {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    margin-top: 10px;
+    width: min(90vw, 500px);
+    height: min(70vh);
+  }
+}
+
+@media (max-width: 390px) {
+  .dail-pad {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    margin-top: 10px;
+    width: min(90vw, 500px);
+    height: min(70vh);
+  }
+}
+
+@media (max-width: 430px) {
+  .dail-pad {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    margin-top: 10px;
+    width: min(90vw, 500px);
+    height: min(70vh);
+  }
+}

@@ -46,5 +46,5 @@
 
 ## 📱 Live Preview
 
- ### [Live Preview](https://ghost-writer-2.github.io/Tic-tac-toe-project/)
+ ### [Live Preview](https://ghost-writer-2.github.io/Calculator-project/)
 

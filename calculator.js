@@ -7,43 +7,46 @@ var calculator_module = (() => {
   const displayText = document.querySelector('.display-text');
   var word = '';
   
+  // Number DOM
   num_array.forEach(element => {
     element.addEventListener('click', () => {
       word += element.id;
-      console.log(word);
-      
       displayText.innerHTML = `<p>${word}</p>`;
     })
+
+    // document.body.addEventListener('keydown', (e) => {
+    //   if (e.key != element.id)  return;
+    //   word += e.key;
+    //   displayText.innerHTML = `<p>${word}</p>`
+    // })
   });
 
+  // Eval button
   equal_btn.addEventListener('click', () => {
    var result = eval(word) || '0';
    word = result;
-   console.log(result);
-   
    displayText.innerHTML = `<p>${result}</p>`;
   })
 
-  delete_btn.addEventListener('click', () => {
-    word.length < 0 || (word = word.replace(word[word.length - 1], ''));
-    displayText.innerHTML = `<p>${word}</p>`;
-  })
+  // Backspace button
+  delete_btn.addEventListener('click', del)
 
+  // Clear button
   clear_btn.addEventListener('click', () => {
     word = '';
     displayText.innerHTML = `<p>${word}</p>`;
   })
 
+  // Percent operator
   percent_btn.addEventListener('click', () => {
     result = parseFloat(word) / 100;
-
     displayText.innerHTML = `<p>${result}</p>`
     word = result;
   })
 
-  document.body.addEventListener('keydown', (e) => {
-    if (e.key != element) return;
-    word += e.key;
-    displayText.innerHTML = `<p>${word}</p>`
-  })
+  function del() {
+    word.length < 0 || (word = word.replace(word[word.length - 1], ''));
+    displayText.innerHTML = `<p>${word}</p>`;
+  }
+
 })()

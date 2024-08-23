@@ -25,7 +25,7 @@ main {
 
 .display-text {
   font-size: min(3em, 50px);
-  text-align: right;
+  text-align: left;
   border: 1px solid black;
   display: flex;
   width: max(90vw);

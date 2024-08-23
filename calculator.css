@@ -30,7 +30,7 @@ main {
   display: flex;
   width: max(90vw);
   height: max(100px);
-  justify-content: start;
+  justify-content: end;
   padding: 1rem;
   border-radius: 5px;
   overflow: hidden;

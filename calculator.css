@@ -19,7 +19,7 @@ body {
 
 main {
   position: absolute;
-  /* top: 10%; */
+  top: 10%;
   /* bottom: 10%; */
 }
 
@@ -90,6 +90,9 @@ img {
 }
 
 @media (max-width: 375px) {
+  main {
+    top: 4%;
+  }
   .dail-pad {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -101,6 +104,9 @@ img {
 }
 
 @media (max-width: 414px) {
+  main {
+    top: 4%;
+  }
   .dail-pad {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -112,6 +118,9 @@ img {
 }
 
 @media (max-width: 390px) {
+  main {
+    top: 4%;
+  }
   .dail-pad {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -123,6 +132,9 @@ img {
 }
 
 @media (max-width: 430px) {
+  main {
+    top: 4%;
+  }
   .dail-pad {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
